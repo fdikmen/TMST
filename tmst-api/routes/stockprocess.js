@@ -49,7 +49,7 @@ router.get("/all", function (req, res, next) {
       as:'Warehouse'
     }},
     {$project:{
-      _id:0,
+      _id:1,
       Quantity:1,
       ProcessDate:true,
       'UserName':{ "$arrayElemAt": ["$user.Name", 0] },
