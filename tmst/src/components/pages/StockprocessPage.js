@@ -22,7 +22,7 @@ export const StockprocessPage = () => {
 
     let columns = [
         {
-            name: 'Malzeme Numarası',
+            name: 'Malzeme Kodu',
             selector: row => row._id, sortable: true,
         },
         {
