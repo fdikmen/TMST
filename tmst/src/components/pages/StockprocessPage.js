@@ -30,7 +30,7 @@ export const StockprocessPage = () => {
         },
         {
             name: 'Kullanıcı',
-            selector: row => row.UserId, sortable: true,
+            selector: row => row.UserName +" " +row.UserSurname, sortable: true,
         },
         {
             name: 'Tarih',
