@@ -1,16 +1,16 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const StockProcesSchema = new Schema(
+const StockprocessSchema = new Schema(
     {
         
-        StockId: { type: String, required: true },
+        StockId: { type: Schema.Types.ObjectId, required: true },
         Quantity: { type: Number, default:0, required: true },
-        UserId: { type: String, required: true },
+        UserId: { type: Schema.Types.ObjectId, required: true },
         UsingTypeId: { type: String },
         ProcessDate: { type: Date, required: true,default:Date.now }
 
     }
 )
 
-module.exports = mongoose.model('StockProcess', StockProcesSchema);
+module.exports = mongoose.model('stockprocess', StockprocessSchema);
