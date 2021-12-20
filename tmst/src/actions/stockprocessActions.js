@@ -26,7 +26,7 @@ export const DELETE_STOCKPROCESS_REJECTED = "DELETE_STOCKPROCESS_REJECTED"
 export function fetchStockprocess(){
     return dispatch => {
         dispatch({type:"FETCH_STOCKPROCESS",
-        payload:axios.get(`${API_BASE}/stockprocess`).then(res=>res.data)})    
+        payload:axios.get(`${API_BASE}/stockprocess/all`).then(res=>res.data)})    
     }
 }
 
